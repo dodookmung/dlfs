@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int AND(float x1, float x2)
+bool AND(float x1, float x2)
 {
     float w1 = 0.5, w2 = 0.5, theta = 0.7;
     float tmp = x1*w1 + x2*w2;
@@ -20,6 +20,7 @@ int AND(float x1, float x2)
 
 int main()
 {
+    cout << "AND\n";
     cout << AND(0, 0) << '\n';
     cout << AND(1, 0) << '\n';
     cout << AND(0, 1) << '\n';
